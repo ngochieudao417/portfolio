@@ -418,9 +418,10 @@ export const projects: Project[] = [
     domains: ["research", "ai"],
     category: { en: "Research / Quantum / RL", vi: "Nghiên cứu / Lượng tử / RL" },
     summary: {
-      en: "Hybrid quantum–classical controller that decides where connected vehicles offload computation across a four-tier ground-to-space network. Manuscript in preparation.",
-      vi: "Bộ điều khiển lai lượng tử – cổ điển quyết định nơi xe kết nối offload tác vụ tính toán trong mạng 4 tầng từ mặt đất lên không gian. Bản thảo đang chuẩn bị.",
+      en: "Hybrid quantum–classical controller that decides where connected vehicles offload computation across a four-tier ground-to-space network.",
+      vi: "Bộ điều khiển lai lượng tử – cổ điển quyết định nơi xe kết nối offload tác vụ tính toán trong mạng 4 tầng từ mặt đất lên không gian.",
     },
+    progress: { value: 70, label: { en: "Manuscript complete", vi: "Đã hoàn thành bản thảo" } },
     tags: ["Python", "NumPy", "PyTorch", "PennyLane", "scikit-learn", "SUMO", "Perceval (Quandela)", "LaTeX"],
     schematic: {
       layout: "snake",
@@ -558,7 +559,7 @@ export const projects: Project[] = [
       {
         id: "status",
         title: { en: "Status", vi: "Trạng thái" },
-        body: { en: "Manuscript in preparation.", vi: "Bản thảo đang được chuẩn bị." },
+        body: { en: "Manuscript complete.", vi: "Đã hoàn thành bản thảo." },
       },
     ],
   },

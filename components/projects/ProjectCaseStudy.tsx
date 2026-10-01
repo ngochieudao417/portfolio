@@ -9,6 +9,7 @@ import { useAsset } from "@/components/layout/AssetsProvider";
 import { ResearchDeepDive } from "@/components/research/ResearchDeepDive";
 import { ButtonLink } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
+import { ProgressBar } from "@/components/ui/ProgressBar";
 import { DomainLabel, TagList } from "@/components/ui/Tag";
 import { getResearch } from "@/content/research";
 import type { Project } from "@/content/types";
@@ -59,6 +60,9 @@ export function ProjectCaseStudy({ project, titleId, variant }: ProjectCaseStudy
         </Heading>
         <p className="mt-4 max-w-2xl text-base text-muted sm:text-lg">{l(project.summary)}</p>
         {project.highlight && <HighlightChip text={l(project.highlight)} className="mt-4" />}
+        {project.progress && (
+          <ProgressBar value={project.progress.value} label={l(project.progress.label)} className="mt-5 max-w-sm" />
+        )}
 
         <div className="mt-6 flex flex-wrap items-center gap-2">
           <ProjectLinks

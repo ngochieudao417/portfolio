@@ -3,6 +3,7 @@
 import { Reveal } from "@/components/layout/Reveal";
 import { Icon } from "@/components/ui/Icon";
 import { Pending } from "@/components/ui/Pending";
+import { ProgressBar } from "@/components/ui/ProgressBar";
 import { DomainLabel, TagList } from "@/components/ui/Tag";
 import { moreProjects } from "@/content/projects";
 import { site } from "@/content/site";
@@ -59,7 +60,10 @@ export function MoreProjects({ onOpen }: { onOpen: (slug: string) => void }) {
                   )}
                 </h4>
                 <p className="mt-1.5 flex-1 text-sm text-muted">{l(project.summary)}</p>
-                <TagList tags={project.tags} limit={4} className="mt-3" />
+                {project.progress && (
+                  <ProgressBar value={project.progress.value} label={l(project.progress.label)} className="mt-4" />
+                )}
+                <TagList tags={project.tags} limit={4} className="mt-4" />
               </div>
             </li>
           ))}

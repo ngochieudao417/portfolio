@@ -27,7 +27,7 @@ export const research: ResearchEntry[] = [
       vi: "Bộ điều khiển lai lượng tử – cổ điển quyết định nơi xe kết nối offload tác vụ tính toán giữa RSU, UAV, HAP và vệ tinh LEO — thay từng module của baseline hierarchical-DQN đã công bố bằng mạch biến phân và QAOA.",
     },
     role: null, // TODO(content)
-    status: { en: "Manuscript in preparation", vi: "Bản thảo đang chuẩn bị" },
+    status: { en: "Manuscript complete", vi: "Đã hoàn thành bản thảo" },
     venue: null,
     keyResult: {
       en: "Node selector on Quandela Belenos photonic QPU: 99.93% valid outcomes, matching simulation on 11 of 12 instances",

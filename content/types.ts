@@ -89,6 +89,8 @@ export interface Project {
   summary: Localized;
   /** Short recognition line shown on the card, e.g. an award. */
   highlight?: Localized;
+  /** For work in progress: completion (0–100) and the current milestone. */
+  progress?: { value: number; label: Localized };
   tags: string[];
   year?: string;
   schematic: Schematic;
